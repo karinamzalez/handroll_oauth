@@ -12,6 +12,13 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'capybara'
+  gem 'rspec-rails'
+  gem 'launchy'
+  gem 'nyan-cat-formatter'
+  gem 'shoulda-matchers'
+  gem 'pry'
+  gem 'database_cleaner'
 end
 
 group :test do
