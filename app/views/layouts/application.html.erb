@@ -8,7 +8,19 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <body>
+  <body class="homepage">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-left">
+            <li class= "white-text">Simple <li class="soft-text">Hub</li></li>
+          <ul>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="custom-nav"><a href="https://github.com/login/oauth/authorize?client_id=<%=ENV['github_client_id']%>&scope=user:email">Login</a></li>
+        </ul>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
