@@ -1,0 +1,66 @@
+<div class="container">
+  <h1 class='white col-sm-10 col-sm-offset-1'> <%= current_user.name %> </h1>
+  <div class="jumbotron col-sm-10 col-sm-offset-1">
+    <div class="container">
+      <div class="col-sm-4">
+        <img src= <%= current_user.image %> height="250" width="250"/>
+      </div>
+      <div class="col-sm-6 col-sm-offset-1 list-box">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default btn-xs" id="repos">Repositories</button>
+          <button type="button" class="btn btn-default btn-xs" id="orgs">Organizations</button>
+          <button type="button" class="btn btn-default btn-xs" id="commits">Commits</button>
+          <button type="button" class="btn button-indigo btn-xs" id="friendcommits">Friend's Commits</button>
+        </div>
+        <div class="userinfo hidden" id="user-repos">
+          <div class = "repos">
+            <%= render partial: 'list', locals: {info_type: @repositories} %>
+          </div>
+        </div>
+
+        <div class="userinfo hidden" id="user-orgs">
+          <div class = "orgs">
+            <%= render partial: 'list', locals: {info_type: @organizations} %>
+          </div>
+        </div>
+
+        <div class="userinfo hidden" id="user-commits">
+          <div class = "commits">
+            <%= render partial: 'list', locals: {info_type: @commits} %>
+          </div>
+        </div>
+
+        <div class="userinfo hidden" id="user-friendcommits">
+          <div class = "friendcommits">
+            <%= render partial: 'list', locals: {info_type: @friend_commits} %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container col-md-12  col-sm-offset-2">
+    <div class="user-stats">
+      <div class="col-md-2 col-sm-3">
+          <div class="box box-grey">
+              <h2 class="white-t">Starred</h2>
+              <h1 class="white-t"><%= @starred.count %></h1>
+          </div>
+      </div>
+
+      <div class="col-md-2 col-sm-3 col-md-offset-1">
+        <div class="box box-grey">
+            <h2 class=white-t>Followers</h2>
+            <h1 class="white-t"><%= @followers.count %></h1>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-sm-3 col-md-offset-1">
+        <div class="box box-grey">
+            <h2 class="white-t">Following</h2>
+            <h1 class="white-t"><%= @following.count %></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

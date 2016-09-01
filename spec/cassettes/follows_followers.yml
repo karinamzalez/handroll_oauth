@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/user/followers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - token bb2f73e8338f32b9067bc258eeddc44a50d43c79
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 14 Jul 2016 21:53:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4989'
+      X-Ratelimit-Reset:
+      - '1468536662'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      Etag:
+      - W/"b168a378099391d30527a05f7c0cf751"
+      X-Oauth-Scopes:
+      - gist, repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 4ffa7f31c726c9622039
+      X-Github-Media-Type:
+      - github.v3
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 52437fedc85beec8da3449496900fb9a
+      X-Github-Request-Id:
+      - 3F910F63:704E:CB599:578809D1
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"login":"mikedao","id":3011748,"avatar_url":"https://avatars.githubusercontent.com/u/3011748?v=3","gravatar_id":"","url":"https://api.github.com/users/mikedao","html_url":"https://github.com/mikedao","followers_url":"https://api.github.com/users/mikedao/followers","following_url":"https://api.github.com/users/mikedao/following{/other_user}","gists_url":"https://api.github.com/users/mikedao/gists{/gist_id}","starred_url":"https://api.github.com/users/mikedao/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mikedao/subscriptions","organizations_url":"https://api.github.com/users/mikedao/orgs","repos_url":"https://api.github.com/users/mikedao/repos","events_url":"https://api.github.com/users/mikedao/events{/privacy}","received_events_url":"https://api.github.com/users/mikedao/received_events","type":"User","site_admin":false},{"login":"AnnaCW","id":17806544,"avatar_url":"https://avatars.githubusercontent.com/u/17806544?v=3","gravatar_id":"","url":"https://api.github.com/users/AnnaCW","html_url":"https://github.com/AnnaCW","followers_url":"https://api.github.com/users/AnnaCW/followers","following_url":"https://api.github.com/users/AnnaCW/following{/other_user}","gists_url":"https://api.github.com/users/AnnaCW/gists{/gist_id}","starred_url":"https://api.github.com/users/AnnaCW/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/AnnaCW/subscriptions","organizations_url":"https://api.github.com/users/AnnaCW/orgs","repos_url":"https://api.github.com/users/AnnaCW/repos","events_url":"https://api.github.com/users/AnnaCW/events{/privacy}","received_events_url":"https://api.github.com/users/AnnaCW/received_events","type":"User","site_admin":false},{"login":"rod-lin","id":9999958,"avatar_url":"https://avatars.githubusercontent.com/u/9999958?v=3","gravatar_id":"","url":"https://api.github.com/users/rod-lin","html_url":"https://github.com/rod-lin","followers_url":"https://api.github.com/users/rod-lin/followers","following_url":"https://api.github.com/users/rod-lin/following{/other_user}","gists_url":"https://api.github.com/users/rod-lin/gists{/gist_id}","starred_url":"https://api.github.com/users/rod-lin/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/rod-lin/subscriptions","organizations_url":"https://api.github.com/users/rod-lin/orgs","repos_url":"https://api.github.com/users/rod-lin/repos","events_url":"https://api.github.com/users/rod-lin/events{/privacy}","received_events_url":"https://api.github.com/users/rod-lin/received_events","type":"User","site_admin":false}]'
+    http_version: 
+  recorded_at: Thu, 14 Jul 2016 21:53:21 GMT
+recorded_with: VCR 3.0.3

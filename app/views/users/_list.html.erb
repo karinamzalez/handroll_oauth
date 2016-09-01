@@ -1,0 +1,14 @@
+<% if info_type %>
+<div class="white-texxt">
+  <%= info_header(info_type) %>
+</div>
+  <table class="table">
+    <% info_type.each do |inf| %>
+    <tr>
+      <td>
+        <%= info_list_item(inf) %>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+<% end %>
