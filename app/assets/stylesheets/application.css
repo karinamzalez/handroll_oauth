@@ -95,3 +95,12 @@ td.color {
     color: white;
     text-decoration: none;
 }
+
+td.color a {
+    color: white;
+    text-decoration: none;
+}
+
+td.color a:hover {
+    color:  #87b7b8;
+}
