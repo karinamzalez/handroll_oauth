@@ -3,7 +3,7 @@ require 'rails_helper'
 describe GithubService do
 
   before(:each) do
-    user = User.create(uid: 1, name: "Karina Munoz Gonzalez", screen_name: "karinamzalez", oauth_token: "bb2f73e8338f32b9067bc258eeddc44a50d43c79", image: "apple", email: "karinamzalez@gmail.com", github: "https://github.com/karinamzalez")
+    user = User.create(uid: 1, name: "Karina Munoz Gonzalez", screen_name: "karinamzalez", oauth_token: ENV["TOKEN"], image: "apple", email: "karinamzalez@gmail.com", github: "https://github.com/karinamzalez")
     @service = GithubService.new(user)
   end
 
@@ -12,7 +12,7 @@ describe GithubService do
       VCR.use_cassette("followers") do
         followers = @service.followers
 
-        expect(followers.count).to eq(3)
+        expect(followers.count).to eq(5)
       end
     end
   end
@@ -22,7 +22,7 @@ describe GithubService do
       VCR.use_cassette("following") do
         following = @service.following
 
-        expect(following.count).to eq(6)
+        expect(following.count).to eq(13)
       end
     end
   end
@@ -32,7 +32,7 @@ describe GithubService do
       VCR.use_cassette("starred") do
         starred = @service.starred
 
-        expect(starred.count).to eq(3)
+        expect(starred.count).to eq(2)
       end
     end
   end
@@ -72,7 +72,7 @@ describe GithubService do
       VCR.use_cassette("following_commits") do
         following_commits = @service.following_commits
 
-        expect(following_commits.count).to eq(180)
+        expect(following_commits.count).to eq(372)
       end
     end
   end

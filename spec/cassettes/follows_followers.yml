@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - token bb2f73e8338f32b9067bc258eeddc44a50d43c79
+      - token 693ec383c3119c06c8257f00ba67b689e68b6690
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Thu, 14 Jul 2016 21:53:21 GMT
+      - Thu, 01 Sep 2016 18:36:06 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -33,22 +33,22 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4989'
+      - '4885'
       X-Ratelimit-Reset:
-      - '1468536662'
+      - '1472757516'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Vary:
       - Accept, Authorization, Cookie, X-GitHub-OTP
       - Accept-Encoding
       Etag:
-      - W/"b168a378099391d30527a05f7c0cf751"
+      - W/"fe47ea52a764f5e378485381a4938415"
       X-Oauth-Scopes:
-      - gist, repo, user
+      - user:email
       X-Accepted-Oauth-Scopes:
       - ''
       X-Oauth-Client-Id:
-      - 4ffa7f31c726c9622039
+      - ff018d004d8631812638
       X-Github-Media-Type:
       - github.v3
       Access-Control-Expose-Headers:
@@ -67,12 +67,12 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Served-By:
-      - 52437fedc85beec8da3449496900fb9a
+      - 01d096e6cfe28f8aea352e988c332cd3
       X-Github-Request-Id:
-      - 3F910F63:704E:CB599:578809D1
+      - 3F910F63:54A9:B871664:57C87516
     body:
       encoding: ASCII-8BIT
-      string: '[{"login":"mikedao","id":3011748,"avatar_url":"https://avatars.githubusercontent.com/u/3011748?v=3","gravatar_id":"","url":"https://api.github.com/users/mikedao","html_url":"https://github.com/mikedao","followers_url":"https://api.github.com/users/mikedao/followers","following_url":"https://api.github.com/users/mikedao/following{/other_user}","gists_url":"https://api.github.com/users/mikedao/gists{/gist_id}","starred_url":"https://api.github.com/users/mikedao/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mikedao/subscriptions","organizations_url":"https://api.github.com/users/mikedao/orgs","repos_url":"https://api.github.com/users/mikedao/repos","events_url":"https://api.github.com/users/mikedao/events{/privacy}","received_events_url":"https://api.github.com/users/mikedao/received_events","type":"User","site_admin":false},{"login":"AnnaCW","id":17806544,"avatar_url":"https://avatars.githubusercontent.com/u/17806544?v=3","gravatar_id":"","url":"https://api.github.com/users/AnnaCW","html_url":"https://github.com/AnnaCW","followers_url":"https://api.github.com/users/AnnaCW/followers","following_url":"https://api.github.com/users/AnnaCW/following{/other_user}","gists_url":"https://api.github.com/users/AnnaCW/gists{/gist_id}","starred_url":"https://api.github.com/users/AnnaCW/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/AnnaCW/subscriptions","organizations_url":"https://api.github.com/users/AnnaCW/orgs","repos_url":"https://api.github.com/users/AnnaCW/repos","events_url":"https://api.github.com/users/AnnaCW/events{/privacy}","received_events_url":"https://api.github.com/users/AnnaCW/received_events","type":"User","site_admin":false},{"login":"rod-lin","id":9999958,"avatar_url":"https://avatars.githubusercontent.com/u/9999958?v=3","gravatar_id":"","url":"https://api.github.com/users/rod-lin","html_url":"https://github.com/rod-lin","followers_url":"https://api.github.com/users/rod-lin/followers","following_url":"https://api.github.com/users/rod-lin/following{/other_user}","gists_url":"https://api.github.com/users/rod-lin/gists{/gist_id}","starred_url":"https://api.github.com/users/rod-lin/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/rod-lin/subscriptions","organizations_url":"https://api.github.com/users/rod-lin/orgs","repos_url":"https://api.github.com/users/rod-lin/repos","events_url":"https://api.github.com/users/rod-lin/events{/privacy}","received_events_url":"https://api.github.com/users/rod-lin/received_events","type":"User","site_admin":false}]'
+      string: '[{"login":"mikedao","id":3011748,"avatar_url":"https://avatars.githubusercontent.com/u/3011748?v=3","gravatar_id":"","url":"https://api.github.com/users/mikedao","html_url":"https://github.com/mikedao","followers_url":"https://api.github.com/users/mikedao/followers","following_url":"https://api.github.com/users/mikedao/following{/other_user}","gists_url":"https://api.github.com/users/mikedao/gists{/gist_id}","starred_url":"https://api.github.com/users/mikedao/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mikedao/subscriptions","organizations_url":"https://api.github.com/users/mikedao/orgs","repos_url":"https://api.github.com/users/mikedao/repos","events_url":"https://api.github.com/users/mikedao/events{/privacy}","received_events_url":"https://api.github.com/users/mikedao/received_events","type":"User","site_admin":false},{"login":"AnnaCW","id":17806544,"avatar_url":"https://avatars.githubusercontent.com/u/17806544?v=3","gravatar_id":"","url":"https://api.github.com/users/AnnaCW","html_url":"https://github.com/AnnaCW","followers_url":"https://api.github.com/users/AnnaCW/followers","following_url":"https://api.github.com/users/AnnaCW/following{/other_user}","gists_url":"https://api.github.com/users/AnnaCW/gists{/gist_id}","starred_url":"https://api.github.com/users/AnnaCW/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/AnnaCW/subscriptions","organizations_url":"https://api.github.com/users/AnnaCW/orgs","repos_url":"https://api.github.com/users/AnnaCW/repos","events_url":"https://api.github.com/users/AnnaCW/events{/privacy}","received_events_url":"https://api.github.com/users/AnnaCW/received_events","type":"User","site_admin":false},{"login":"GKhalsa","id":11367377,"avatar_url":"https://avatars.githubusercontent.com/u/11367377?v=3","gravatar_id":"","url":"https://api.github.com/users/GKhalsa","html_url":"https://github.com/GKhalsa","followers_url":"https://api.github.com/users/GKhalsa/followers","following_url":"https://api.github.com/users/GKhalsa/following{/other_user}","gists_url":"https://api.github.com/users/GKhalsa/gists{/gist_id}","starred_url":"https://api.github.com/users/GKhalsa/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/GKhalsa/subscriptions","organizations_url":"https://api.github.com/users/GKhalsa/orgs","repos_url":"https://api.github.com/users/GKhalsa/repos","events_url":"https://api.github.com/users/GKhalsa/events{/privacy}","received_events_url":"https://api.github.com/users/GKhalsa/received_events","type":"User","site_admin":false},{"login":"ckaminer","id":17103784,"avatar_url":"https://avatars.githubusercontent.com/u/17103784?v=3","gravatar_id":"","url":"https://api.github.com/users/ckaminer","html_url":"https://github.com/ckaminer","followers_url":"https://api.github.com/users/ckaminer/followers","following_url":"https://api.github.com/users/ckaminer/following{/other_user}","gists_url":"https://api.github.com/users/ckaminer/gists{/gist_id}","starred_url":"https://api.github.com/users/ckaminer/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ckaminer/subscriptions","organizations_url":"https://api.github.com/users/ckaminer/orgs","repos_url":"https://api.github.com/users/ckaminer/repos","events_url":"https://api.github.com/users/ckaminer/events{/privacy}","received_events_url":"https://api.github.com/users/ckaminer/received_events","type":"User","site_admin":false},{"login":"marcellawigg","id":15963934,"avatar_url":"https://avatars.githubusercontent.com/u/15963934?v=3","gravatar_id":"","url":"https://api.github.com/users/marcellawigg","html_url":"https://github.com/marcellawigg","followers_url":"https://api.github.com/users/marcellawigg/followers","following_url":"https://api.github.com/users/marcellawigg/following{/other_user}","gists_url":"https://api.github.com/users/marcellawigg/gists{/gist_id}","starred_url":"https://api.github.com/users/marcellawigg/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/marcellawigg/subscriptions","organizations_url":"https://api.github.com/users/marcellawigg/orgs","repos_url":"https://api.github.com/users/marcellawigg/repos","events_url":"https://api.github.com/users/marcellawigg/events{/privacy}","received_events_url":"https://api.github.com/users/marcellawigg/received_events","type":"User","site_admin":false}]'
     http_version: 
-  recorded_at: Thu, 14 Jul 2016 21:53:21 GMT
+  recorded_at: Thu, 01 Sep 2016 18:36:06 GMT
 recorded_with: VCR 3.0.3

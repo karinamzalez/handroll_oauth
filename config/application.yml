@@ -17,6 +17,7 @@ development:
 test:
   github_client_id: ff018d004d8631812638
   github_client_secret: d0ca94e5a4baa37b2e63d94903abe464478130d0
+  TOKEN: "693ec383c3119c06c8257f00ba67b689e68b6690"
 
 production:
   github_client_id: ff018d004d8631812638
