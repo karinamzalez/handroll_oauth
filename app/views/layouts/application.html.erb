@@ -19,7 +19,14 @@
           <ul>
         </div>
         <ul class="nav navbar-nav navbar-right">
-          <li class="custom-nav"><a href="https://github.com/login/oauth/authorize?client_id=<%=ENV['github_client_id']%>&scope=user:email">Login</a></li>
+          <% if current_user %>
+            <li class="custom-nav"><%= link_to "Starred", "https://github.com/stars" %></li>
+            <li class="custom-nav"><%= link_to "Followers", "https://github.com/#{current_user.screen_name}/followers" %></li>
+            <li class="custom-nav"><%= link_to "Following", "https://github.com/#{current_user.screen_name}/following" %></li>
+            <li><%= link_to "Logout", logout_path, method: :delete %></li>
+          <% else %>
+            <li class="custom-nav"><a href="https://github.com/login/oauth/authorize?client_id=ff018d004d8631812638&scope=user:email">Login</a></li>
+          <% end %>
         </ul>
       </div>
     </nav>
