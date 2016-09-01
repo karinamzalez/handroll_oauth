@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
         flash[:danger] = "sorry, there was an error"
       end
     end
-    redirect_to users_path
+    redirect_to user_path(user)
   end
 
   def destroy

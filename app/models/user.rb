@@ -11,4 +11,8 @@ class User < ApplicationRecord
       new_user.oauth_token        = oauth.access_token
     end
   end
+
+  def followers
+    Follows.followers
+  end
 end
